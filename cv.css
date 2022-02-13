@@ -635,7 +635,7 @@ section {
   opacity: 0;
   transform: translateX(20px);
   transition: transform 1s, opacity 1s;
-  transition-delay: 1.3s;
+  transition-delay: 1.25s;
 }
 
 .lang-css{
