@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="hm.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="hm.js"></script>
+    </head>
+
+    <body>
+        <section class="title">
+            Hangman
+        </section>
+
+        <section class="container opening">
+            <div class="wrap">
+              <div id="play">
+                <button class="playButton" id="playButton">Play</button>
+              </div>
+            </div>
+        </section>
+
+        <div class="wrapper">
+            <canvas id="stickman"></canvas>
+            <p id="catagoryName"></p>
+            <div id="hold"></div>
+            <div id="buttons"></div>
+            <p id="lives"></p>
+            <p id="clue">Clue: -</p>  
+            <div class="container">
+                <button id="hint">Hint</button>
+                <button id="reset">Play again</button>
+            </div>
+        </div>
+
+    </body>
+</html>
