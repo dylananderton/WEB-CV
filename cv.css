@@ -439,9 +439,24 @@ p {
 } 
 
 .copy {
+  display: flex;
   position: relative;
+  justify-content: center;
   margin: auto;
   text-align: center;
+}
+
+.copy-text {
+  display: table-cell;
+}
+
+.source-code {
+  display: table-cell;
+  color: gray;
+}
+
+.source-code:hover {
+  color: gray;
 }
 
 .cIn{
