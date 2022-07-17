@@ -76,11 +76,6 @@ canvas {
     font-size: 1.8em;
 }
 
-/* #buttons {
-    display: flex;
-    justify-content: center;
-} */
-
 #alphabet {
     margin: 15px auto;
     padding: 0 0 0 15px;
@@ -279,12 +274,6 @@ button:hover {
         }
 }
 
-/* @media (max-width: 1300px) {
-    #buttons{
-
-    }
-} */
-
 @media (max-width: 767px) {
     #alphabet {
         padding: 0 0 0 15px;
@@ -294,4 +283,14 @@ button:hover {
     #alphabet {
         padding: 0 0 0 25px;
     }
+}
+
+a {
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+a:hover {
+    text-decoration: none;
 }

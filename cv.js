@@ -6,7 +6,6 @@ function toAbout(){
 
 document.addEventListener("DOMContentLoaded", function(event) { 
 
-	// get all of the elements with the 'scroll' class.
 	const scrollList = document.querySelectorAll(".animated")
 
 	const callback = (entries, observer) => {
@@ -36,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 document.addEventListener("DOMContentLoaded", function(event) { 
 
-	// get all of the elements with the 'scroll' class.
 	const scrollList = document.querySelectorAll(".animated2")
 
 	const callback = (entries, observer) => {
@@ -98,10 +96,22 @@ function hangman(){
 	if($containerWidth < 768){
 		$("#hangman").hide();
 		$("#hangman2").show();
+		$("#notes").hide();
+		$("#notes2").show();
+		$("#passgen").hide();
+		$("#passgen2").show();
+		$("#crypto").hide();
+		$("#crypto2").show();
 	}
 	else {
 		$("#hangman2").hide();
 		$("#hangman").show();
+		$("#notes2").hide();
+		$("#notes").show();
+		$("#crypto2").hide();
+		$("#crypto").show();
+		$("#passgen2").hide();
+		$("#passgen").show();
 	}
 }
 
