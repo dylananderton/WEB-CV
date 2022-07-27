@@ -833,7 +833,12 @@ html, body {
     margin-top: 1em;
   }
 
-  #notespic, #hangmanpic, #cryptopic, #passgenpic{
+  #weather {
+    position: relative;
+    margin-top: 1em;
+  }
+
+  #notespic, #hangmanpic, #cryptopic, #passgenpic, #weatherpic{
     height: 312px;
     width: 620px;
     border: 2px solid #F8F0E3;
@@ -842,11 +847,11 @@ html, body {
     transition: transform 0.5s, box-shadow 0.5s;
   }
 
-  #notespic a, #hangmanpic a, #cryptopic a, #passgenpic a {
+  #notespic a, #hangmanpic a, #cryptopic a, #passgenpic a, #weatherpic a {
     transition: opacity 0.4s;
   }
 
-  .notes-overlay, .hm-overlay, .crypto-overlay, .passgen-overlay{
+  .notes-overlay, .hm-overlay, .crypto-overlay, .passgen-overlay, .weather-overlay{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -857,7 +862,7 @@ html, body {
     background-color: #252526;
   }
   
-  .notes-overlay:hover, .hm-overlay:hover, .passgen-overlay:hover, .crypto-overlay:hover{
+  .notes-overlay:hover, .hm-overlay:hover, .passgen-overlay:hover, .crypto-overlay:hover, .weather-overlay:hover{
     cursor: pointer;
     opacity: 0.875;
     }
@@ -881,8 +886,13 @@ html, body {
     cursor: pointer;
     opacity: 1.0;
   }
+
+  #weather:hover .weather-overlay .weather-overlay-text {
+    cursor: pointer;
+    opacity: 1.0;
+  }
   
-  .notes-overlay-text, .hm-overlay-text, .crypto-overlay-text, .passgen-overlay-text{
+  .notes-overlay-text, .hm-overlay-text, .crypto-overlay-text, .passgen-overlay-text, .weather-overlay-text{
     color: white;
     font-size: 50px;
     position: absolute;
@@ -912,6 +922,10 @@ html, body {
       height: 260px;
       width: 517px;
     }
+    #weatherpic {
+      height: 260px;
+      width: 517px;
+    }
   }
 
   #hangman2 {
@@ -936,7 +950,12 @@ html, body {
     margin-top: 1.5em;
   }
 
-  #notespic2, #hangmanpic2, #cryptopic2, #passgenpic2{
+  #weather2 {
+    position: relative;
+    margin-top: 1.5em;
+  }
+
+  #notespic2, #hangmanpic2, #cryptopic2, #passgenpic2, #weatherpic2 {
     height: 482px;
     width: 311px;
     border: 2px solid #F8F0E3;
@@ -961,7 +980,11 @@ html, body {
     transition: opacity 0.4s;
   }
 
-  .notes2-overlay, .hm2-overlay, .crypto2-overlay, .passgen2-overlay{
+  #weatherpic2 a {
+    transition: opacity 0.4s;
+  }
+
+  .notes2-overlay, .hm2-overlay, .crypto2-overlay, .passgen2-overlay, .weather2-overlay{
     position: absolute;
     top: 0;
     bottom: 0;
@@ -972,7 +995,7 @@ html, body {
     background-color: #252526;
   }
   
-  .notes2-overlay:hover, .hm2-overlay:hover, .passgen2-overlay:hover, .crypto2-overlay:hover{
+  .notes2-overlay:hover, .hm2-overlay:hover, .passgen2-overlay:hover, .crypto2-overlay:hover, .weather2-overlay:hover{
     cursor: pointer;
     opacity: 0.875;
     }
@@ -997,7 +1020,12 @@ html, body {
     opacity: 1.0;
   }
   
-  .notes2-overlay-text, .hm2-overlay-text, .passgen2-overlay-text, .crypto2-overlay-text{
+  #weather2:hover .weather2-overlay .weather2-overlay-text {
+    cursor: pointer;
+    opacity: 1.0;
+  }
+  
+  .notes2-overlay-text, .hm2-overlay-text, .passgen2-overlay-text, .crypto2-overlay-text, .weather2-overlay-text{
     color: white;
     font-size: 45px;
     position: absolute;

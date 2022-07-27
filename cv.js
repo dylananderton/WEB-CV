@@ -102,6 +102,8 @@ function hangman(){
 		$("#passgen2").show();
 		$("#crypto").hide();
 		$("#crypto2").show();
+		$("#weather").hide();
+		$("#weather2").show();
 	}
 	else {
 		$("#hangman2").hide();
@@ -112,6 +114,8 @@ function hangman(){
 		$("#crypto").show();
 		$("#passgen2").hide();
 		$("#passgen").show();
+		$("#weather2").hide();
+		$("#weather").show();
 	}
 }
 
@@ -126,103 +130,3 @@ $(window).resize(function () {
 	skillslist();
 	hangman();
 });
-// $(document).ready(function() {
-// 	$(window).resize(function(){
-// 	if($(window).width() < 992){
-// 		$("#skills-list #skillbr").removeClass("brmed");
-// 	}
-// 	else {
-// 		$("#skills-list #skillbr").addClass("brmed");
-// 	}
-// 	})
-// });
-
-// $(document).ready(function() {
-// 	$(window).resize(function(){
-// 	if(($(window).width() > 767) && ($(window).width() < 992)){
-// 		$("#skills-list").hide();
-// 		$("#skills-list2").show();
-// 	}
-// 	else {
-// 		$("#skills-list").show();
-// 		$("#skills-list2").hide();
-// 	}
-// 	})
-// });
-
-// $(document).ready(function() {
-// 	$(window).resize(function(){
-// 	if($(window).width() < 768){
-// 		$("#hangman").hide();
-// 		$("#hangman2").show();
-// 	}
-// 	else {
-// 		$("#hangman2").hide();
-// 		$("#hangman").show();
-// 	}
-// 	})
-// });
-
-// $(document).ready(function() {
-// 	const $skillslist = $('.skills-list');
-// 	$(window).resize(function(){
-// 	if($(window).width() < 992){
-// 		$("#skills-list #skillbr").removeClass("brmed");
-// 	}
-// 	else {
-// 		$("#skills-list #skillbr").addClass("brmed");
-// 	}
-// 	})
-// });
-
-// $(document).ready(function() {
-// 	$(window).resize(function(){
-// 	if(($(window).width() > 767) && ($(window).width() < 992)){
-// 		$("#skills-list").hide();
-// 		$("#skills-list2").show();
-// 	}
-// 	else {
-// 		$("#skills-list").show();
-// 		$("#skills-list2").hide();
-// 	}
-// 	})
-// });
-
-// $(document).ready(function() {
-// 	$(window).resize(function(){
-// 	if($(window).width() < 768){
-// 		$("#hangman").hide();
-// 		$("#hangman2").show();
-// 	}
-// 	else {
-// 		$("#hangman2").hide();
-// 		$("#hangman").show();
-// 	}
-// 	})
-// });
-
-// $(document).ready(function() {
-// 	const $langhtml = $('.lang-html');
-// 	const $langc = $('.lang-c');
-// 	const $langcss = $('.lang-css');
-// 	$(window).resize(function(){
-// 	  if(($(window).width() > 767) && ($(window).width() < 992)){
-// 		$langhtml.html($langhtml.html().split('&nbsp;').join('<!--nbsp-->'));
-// 		$langhtml.html($langhtml.html().split('\u2002').join('<br>'));
-// 		$langhtml.html($langhtml.html().split('\u2003').join('<!--emsp-->'));
-// 		$langc.html($langc.html().split('\u2002').join('<br>'));
-// 		$langc.html($langc.html().split('\u2003').join('<!--emsp-->'));
-// 		$langcss.html($langcss.html().split('&nbsp;').join('<br>'));
-// 		$langcss.html($langcss.html().split('\u2003').join('<!--emsp-->'));
-// 	  }
-// 	  else {
-// 		$langhtml.html($langhtml.html().split('<!--nbsp-->').join('&nbsp;'));
-// 		$langhtml.html($langhtml.html().split('<br>').join('\u2002'));
-// 		$langhtml.html($langhtml.html().split('<!--emsp-->').join('\u2003'));
-// 		$langc.html($langc.html().split('<br>').join('\u2002'));
-// 		$langc.html($langc.html().split('<!--emsp-->').join('\u2003'));
-// 		$langcss.html($langcss.html().split('<br>').join('&nbsp;'));
-// 		$langcss.html($langcss.html().split('<!--emsp-->').join('\u2003'));
-// 	  }
-// 	})
-//   });
